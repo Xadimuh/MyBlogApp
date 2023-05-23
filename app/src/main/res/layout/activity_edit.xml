@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardBackgroundColor"
+    android:backgroundTint="#7C7777"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddArticleActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="A Simple Blog"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Ajouter un article"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/white"
+        android:hint="Titre"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#100F0F" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittext_back1"
+
+        android:hint="Date"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="381dp"
+        android:layout_height="178dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:gravity="top"
+        android:hint="@string/contenu"
+        android:minLines="5"
+        android:padding="8dp"
+        android:textColor="#A62F2F"
+        android:textColorHint="#0C0B0B"
+        android:textColorLink="#AF1414"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/black"
+        android:text="Modifier"
+        android:textColor="@android:color/white" /> <!-- Texte blanc -->
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="411dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="Add Article"
+        android:paddingLeft="299dp"
+        android:paddingTop="99dp"
+        android:src="@drawable/baseline_keyboard_return_24" />
+
+
+</LinearLayout>
+
+
